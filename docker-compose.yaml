@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  mc:
+    image: itzg/minecraft-server:java17
+    environment:
+      TYPE: SPIGOT
+      VERSION: 1.18.1
+      ## Use local spigot server file if needed
+      SPIGOT_DOWNLOAD_URL: file:///downloads/spigot_server-1.18.1.jar
+      EULA: "true"
+      MEMORY: 8G
+      EXEC_DIRECTLY: "true"
+      COPY_CONFIG_DEST: /data
+      SYNC_SKIP_NEWER_IN_DESTINATION: "false"
+      ## Spigot plugins
+      # AureliumMobs       - 94168
+      # AureliumSkills     - 81069
+      # BestTools          - 81490
+      # ChestSort          - 59773
+      # DynmapStructures   - 39534
+      # Magic              - 1056
+      # Minepacks          - 19286
+      # One Play Sleep     - 31585
+      # RocketBoots        - 13529
+      # SavageDeathChest   - 6633
+      # SavageDeathCompass - 81306
+      # Spawnx             - 2429
+      # TreeAssist         - 67436
+      # Vivecraft          - 33166
+      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,81069,81306,81490,94168
+      ## Other plugins
+      # Dynmap
+      # Dynmap-Mobs
+      # Holographic Displays
+      # HoloMobHealth
+      # ProtocolLib
+      # ServerMiniMap
+      # SurvivalPlus
+      MODS: "
+        https://dev.bukkit.org/projects/dynmap/files/3661624/download,
+        https://dev.bukkit.org/projects/dynmap-mobs/files/latest,
+        https://dev.bukkit.org/projects/holographic-displays/files/3549616/download,
+        https://ci.loohpjames.com/job/HoloMobHealth/lastSuccessfulBuild/artifact/target/HoloMobHealth-2.2.4.12.jar,
+        https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
+        https://dev.bukkit.org/projects/serverminimap/files/latest,
+        https://github.com/Pixelated-Studios/SurvivalPlus/releases/download/4.0.4-RELEASE/SurvivalPlus-4.0.4-RELEASE.jar
+      "
+      ## server.properties
+      ALLOW_FLIGHT: "true"
+      DIFFICULTY: hard  # peaceful, easy, normal, hard
+      ## Set HOSTNAME in .env
+      RESOURCE_PACK: http://${HOSTNAME}:8123/resources/SP-1.14v6_Magic-RP-1.18.zip
+      RESOURCE_PACK_SHA1: 0d4e0ebc4d08c843e9b19074c0757ea3c0fa5e0b
+      RESOURCE_PACK_ENFORCE: "true"
+    ports:
+      - 25565:25565
+      - 8123:8123
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+      - ./downloads:/downloads:ro
+      - ./config:/config:ro
+      - /etc/timezone:/etc/timezone:ro
