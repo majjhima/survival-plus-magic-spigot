@@ -6,10 +6,10 @@ General:
   Language: lang_en
 
   # Prevent breaking of logs without the right tool
-  Prevent Log Breaking Without Tool: false
+  Prevent Log Breaking Without Tool: true
 
   # Prevent breaking of logs if the tool would break in the process
-  Prevent Log Breaking With Breaking Tool: false
+  Prevent Log Breaking With Breaking Tool: true
 
   # For the toggling command, should players start with TreeAssist active?
   Toggle Default: true
@@ -37,10 +37,10 @@ Commands:
 Destruction:
 
   # Spawn a FallingBlock when breaking a block
-  Falling Blocks: false
+  Falling Blocks: true
 
   # Make the FallingBlocks look almost like an actual tree falling over
-  Falling Blocks Fancy: false
+  Falling Blocks Fancy: true
 
   # Increase leaf decay by looking for nearby lonely leaves
   Fast Leaf Decay: true
@@ -49,7 +49,7 @@ Destruction:
   Message Invalid Blocks: true
 
   # Only break blocks that are above the block the player broke
-  Only Above: false
+  Only Above: true
 
 # === [ Placed Blocks Settings ] ===
 Placed Blocks:
@@ -67,10 +67,10 @@ Placed Blocks:
 Plugins:
 
   # Create a custom block break event for every automatic block broken
-  CustomEvents: false
+  CustomEvents: true
 
   # Count broken blocks towards the TreeFeller ability
-  mcMMO: true
+  mcMMO: false
 
   # Count broken trees towards the TreeFeller ability
   TreeMcMMO: false

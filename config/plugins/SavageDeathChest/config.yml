@@ -83,11 +83,11 @@ SIGN_TEXT:
   - '&lR.I.P.&r'
   - '%PLAYER%'
   - ''
-  - 'D: %DATE%'
+  - '%DATE%'
 
 # Date format documentation:
 # https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
-DATE_FORMAT: "MMM d, y"
+DATE_FORMAT: "MMM dd hh:mma"
 
 # Ignore protection plugin permissions on death chest placement or access
 protection-plugins:

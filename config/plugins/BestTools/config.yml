@@ -55,13 +55,13 @@
 ###############################
 
 # When false, new players have to run /besttools or /bt once to enable BestTools
-besttools-enabled-by-default: false
+besttools-enabled-by-default: true
 
 # When false, new players have to run /refill or /rf once to enable hotbar refill
 refill-enabled-by-default: false
 
 # Only use tools from the hotbar? Can be changed per player using /besttools hotbar
-hotbar-only: true
+hotbar-only: false
 
 # The preferred slot where BestTools should move the tool if it's not in the hotbar
 # and hotbar-only is set to false. Must be a number between 0 (leftmost hotbar slot)

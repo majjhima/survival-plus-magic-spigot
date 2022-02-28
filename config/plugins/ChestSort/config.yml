@@ -192,11 +192,11 @@ additional-hotkeys:
   # Use left-click outside inventory to quickly put matching items from your inventory (except hotbar)
   # into the chest. Use left-double-click to put everything except your hotbar into the chest.
   # Permission: chestsort.hotkey.leftclick
-  left-click: false
+  left-click: true
   # Use right-click outside inventory to quickly take all matching items from the chest into your
   # inventory. Use right-double-click to take all items out of the chest.
   # Permission: chestsort.hotkey.leftclick
-  right-click: false
+  right-click: true
 
 ##########################
 ##### Update Checker #####

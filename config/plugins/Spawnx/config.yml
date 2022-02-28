@@ -32,7 +32,7 @@ Enable:
 
 Cooldowns:
 # Here you can set the duration of cooldowns. The number will be interpreted as seconds. If you dont want cooldown, just set 0.
-  RandomSpawn: 120
+  RandomSpawn: 60
 
 RandomSpawnsBlocks:
 # Here you can set the max amount of distance the random spawns will use! High numbers as the massive one arent recommended.
@@ -42,13 +42,13 @@ RandomSpawnsBlocks:
   Far: 4000
   Massive: 8000
 
-HeightStartPointRandomSpawn: 250
+HeightStartPointRandomSpawn: 50
 #This is the number the random spawn system will consider as height in order to prevent colapsing with mountains. If you are using flat surfaces lower this number for performance improvements.
   
 MaxFailureNumberRandomSpawn: 20
 #Set the max number the random spawn system can fail searching for a spawn without water or lava. If it fails, it will spawn the player above a Cobblestone. Keep this number low for better performance.
   
-SpawnDelay: 5
+SpawnDelay: 2
 # Set the delay time the player will have to wait in order to spawn. Bypass this with: - spawnx.delay.bypass
 SpawnAllowMovement: false
 # If true, players will be able to still move while waiting for the spawn delay to go to zero.

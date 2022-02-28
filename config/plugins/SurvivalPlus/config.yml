@@ -10,7 +10,7 @@ Language: EN
 
 MultiWorld:
   # Enable the SurvivalPlus resource pack for players
-  EnableResourcePack: true
+  EnableResourcePack: false
   # The link to the pack, you can put a custom link here if need be
   ResourcePackURL: https://www.dropbox.com/s/fq6or9vvcup7wvd/SP-1.14v6.zip?dl=1
   # Notify players when they log in if they deny the resource pack
@@ -21,7 +21,7 @@ MultiWorld:
 LocalChatDist: -1
 
 # Disable player's coords in the Minecraft debug screen
-NoPos: true
+NoPos: false
 
 # When a player joins, they will get a link to a simple starter guide
 WelcomeGuide:

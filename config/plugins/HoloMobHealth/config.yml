@@ -1,7 +1,7 @@
 Display:
   # Only one line is allowed (Unless you enabled ***EXPERIMENTAL*** multi-line)
   Text:
-    - "&b{Mob_Type_Or_Name}: {DynamicColor}{Health_0.0}&f/{MaxHealth_0.0}"
+    - "&b{Mob_Type_Or_Name}: {DynamicColor}{ScaledSymbols}"
     - If Multiline is enabled, you will see this line
   # Settings for the {DynamicColor} Placeholder
   DynamicColorSettings:
@@ -69,7 +69,7 @@ Options:
   # Note that disabling it saves performance
   # Restart to see changes
   Range:
-    Use: false
+    Use: true
     Distance: 15
     # Refresh rate of the detection of mobs within range in ticks
     # 20 ticks = 1 second
