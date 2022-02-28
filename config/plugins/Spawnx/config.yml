@@ -1,0 +1,59 @@
+################################################
+#                                              #
+#                   Spawnx                     #
+#              Configuration File              #
+#          Plugin created by xtomyserrax       #
+#                                              #
+################################################
+
+# NOTE BEFORE YOU EDIT: Try to edit the config.yml when the server is closed. Always make a BACKUP of the config.yml preventing you lose your configuration!
+
+#Here you can set what the language of the plugin is. For default it will be english. Right now, there is available english and spanish, if you want to help with another language, please contact me!
+#Put english for English language or spanish for Spanish language!
+Language: english
+
+Enable:
+# This will enable/disable with a true or false the commands: /spawn ; /setspawn ; /hub ; /nearrandomspawn ; /randomspawn ; /farrandomspawn and /massiverandomspawn .
+  Essentials: true
+#Enable or Disable hooking with Essentials so Spawnx is compatible with features such as /back
+  Randomspawn:
+    Near: true
+#Enable or Disable /nearrandomspawn.
+    Normal: true
+#Enable or Disable /randomspawn.
+    Far: true
+#Enable or Disable /farrandomspawn.
+    Massive: true
+#Enable or Disable /massiverandomspawn.
+  Updater: true
+#Enable or Disable the detection of new updates.
+  Metrics: true
+#Enable or Disable the metrics system. It collects data for me to see how much servers uses the plugin and things like the minecraft version!
+
+Cooldowns:
+# Here you can set the duration of cooldowns. The number will be interpreted as seconds. If you dont want cooldown, just set 0.
+  RandomSpawn: 120
+
+RandomSpawnsBlocks:
+# Here you can set the max amount of distance the random spawns will use! High numbers as the massive one arent recommended.
+# This system also considers negative numbers so if you set 200, it can go up to 200 or up to -200.
+  Near: 500
+  Normal: 1000
+  Far: 4000
+  Massive: 8000
+
+HeightStartPointRandomSpawn: 250
+#This is the number the random spawn system will consider as height in order to prevent colapsing with mountains. If you are using flat surfaces lower this number for performance improvements.
+  
+MaxFailureNumberRandomSpawn: 20
+#Set the max number the random spawn system can fail searching for a spawn without water or lava. If it fails, it will spawn the player above a Cobblestone. Keep this number low for better performance.
+  
+SpawnDelay: 5
+# Set the delay time the player will have to wait in order to spawn. Bypass this with: - spawnx.delay.bypass
+SpawnAllowMovement: false
+# If true, players will be able to still move while waiting for the spawn delay to go to zero.
+SpawnAllowDamage: false
+# If true, players will be able to make and receive damage while waiting for the spawn delay to go to zero.
+
+#Do not touch this.
+FileVersion: '3.0.1'

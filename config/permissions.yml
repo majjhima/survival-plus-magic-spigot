@@ -1,0 +1,55 @@
+minepacks:
+  default: true
+  children:
+    backpack.fullpickup: true
+    backpack.user: true
+    backpack.size.6: true
+besttools:
+  default: true
+  children:
+    besttools.use: true
+    besttools.refill: true
+chestsort:
+  default: true
+  children:
+    chestsort.use: true
+    chestsort.use.inventory: true
+    chestsort.hotkey.middleclick: true
+    chestsort.hotkey.shiftclick: true
+    chestsort.hotkey.doubleclick: true
+    chestsort.hotkey.shiftrightclick: true
+    chestsort.hotkey.outside: true
+    chestsort.hotkey.leftclick: true
+    chestsort.hotkey.rightclick: true
+minimap:
+  default: true
+  children:
+    minimap.fastupdate: true
+    minimap.command.minimap: true
+    minimap.command.waypoint.help: true
+    minimap.command.waypoint.list: true
+    minimap.command.waypoint.add: true
+    minimap.command.waypoint.remove: true
+    minimap.command.waypoint.hide: true
+rocketboots:
+  default: true
+  children:
+    rocketboots.boots.chainmail: true
+    rocketboots.boots.diamond: true
+    rocketboots.boots.gold: true
+    rocketboots.boots.iron: true
+    rocketboots.boots.leather: true
+    rocketboots.feather: true
+spawnx:
+  default: true
+  children:
+    spawnx.spawn: true
+    spawnx.spawn.other: true
+    spawnx.randomspawn.near: true
+    spawnx.randomspawn.normal: true
+    spawnx.randomspawn.far: true
+    spawnx.randomspawn.massive: true
+survivalplus:
+  default: true
+  children:
+    survivalplus.nutrition.gui: true
