@@ -51,7 +51,7 @@ services:
       DIFFICULTY: hard  # peaceful, easy, normal, hard
       ## Set HOSTNAME in .env
       RESOURCE_PACK: http://${HOSTNAME}:8123/resources/SP-1.14v6_Magic-RP-1.18.zip
-      RESOURCE_PACK_SHA1: 0d4e0ebc4d08c843e9b19074c0757ea3c0fa5e0b
+      RESOURCE_PACK_SHA1: f06546e49ae8c39101454bd58b8af8278afc582a
       RESOURCE_PACK_ENFORCE: "true"
     ports:
       - 25565:25565
