@@ -18,7 +18,9 @@ services:
       # AureliumSkills     - 81069
       # BestTools          - 81490
       # ChestSort          - 59773
+      # DualWield          - 82349
       # DynmapStructures   - 39534
+      # Epic Replant       - 95096
       # Magic              - 1056
       # Minepacks          - 19286
       # One Play Sleep     - 31585
@@ -28,7 +30,7 @@ services:
       # Spawnx             - 2429
       # TreeAssist         - 67436
       # Vivecraft          - 33166
-      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,81069,81306,81490,94168
+      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,81069,81306,81490,82349,94168,95096
       ## Other plugins
       # Dynmap
       # Dynmap-Mobs
