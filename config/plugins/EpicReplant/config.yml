@@ -2,7 +2,7 @@ CropBreak:
   # Disables/enables the whole replant system (a full server restart is needed to apply changes)
   enabled: true
   # When true players need the permission epicreplant.replant
-  requirePermission: true
+  requirePermission: false
   # Use '[]' or '-' to allow replanting in any world
   disabledWorlds:
     - "disabled world"
@@ -30,9 +30,9 @@ CropBreak:
 
 CropTrampling:
   # Disables/enables the crop trampling system (a full server restart is needed to apply changes)
-  enabled: true
+  enabled: false
   # When true players need the permission epicreplant.trampling
-  requirePermission: true
+  requirePermission: false
   # Use '[]' or '-' to allow replanting in any world
   disabledWorlds: []
   # Disables/enables the need of leather boots to make the antiCropTrampling work
