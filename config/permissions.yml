@@ -40,6 +40,25 @@ rocketboots:
     rocketboots.boots.iron: true
     rocketboots.boots.leather: true
     rocketboots.feather: true
+ships:
+  default: true
+  children:
+    ships.cmd.info: true
+    ships.cmd.blockinfo: true
+    ships.cmd.shiptype.create: true
+    ships.cmd.config.set: true
+    ships.cmd.config.view: true
+    ships.cmd.blocklist.set: true
+    ships.cmd.blocklist.view: true
+    ships.cmd.ship.track: true
+    ships.cmd.ship.eot: true
+    ships.cmd.ship.crew: true
+    ships.move.own.ships.airship: true
+    ships.move.own.ships.watership: true
+    ships.move.own.ships.marsship: true
+    ships.move.other.ships.airship: true
+    ships.make.ships.airship: true
+    ships.remove.other: true
 spawnx:
   default: true
   children:

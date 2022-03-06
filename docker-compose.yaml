@@ -4,12 +4,12 @@ services:
   mc:
     image: itzg/minecraft-server:java17
     environment:
-      TYPE: SPIGOT
+      TYPE: PAPER
       VERSION: 1.18.1
       ## Use local spigot server file if needed
-      SPIGOT_DOWNLOAD_URL: file:///downloads/spigot_server-1.18.1.jar
+      #SPIGOT_DOWNLOAD_URL: file:///downloads/spigot_server-1.18.1.jar
       EULA: "true"
-      MEMORY: 8G
+      MEMORY: 12G
       EXEC_DIRECTLY: "true"
       COPY_CONFIG_DEST: /data
       SYNC_SKIP_NEWER_IN_DESTINATION: "false"
@@ -18,19 +18,22 @@ services:
       # AureliumSkills     - 81069
       # BestTools          - 81490
       # ChestSort          - 59773
+      # Chunky             - 81534
       # DualWield          - 82349
       # DynmapStructures   - 39534
       # Epic Replant       - 95096
       # Magic              - 1056
       # Minepacks          - 19286
+      # Oh The Dungeions You'll Go - 76437
       # One Play Sleep     - 31585
       # RocketBoots        - 13529
       # SavageDeathChest   - 6633
       # SavageDeathCompass - 81306
       # Spawnx             - 2429
+      # TerraformGenerator - 75132
       # TreeAssist         - 67436
       # Vivecraft          - 33166
-      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,81069,81306,81490,82349,94168,95096
+      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,75132,76437,81069,81306,81490,81534,82349,94168,95096
       ## Other plugins
       # Dynmap
       # Dynmap-Mobs
@@ -38,14 +41,16 @@ services:
       # HoloMobHealth
       # ProtocolLib
       # ServerMiniMap
+      # Ships
       # SurvivalPlus
       MODS: "
         https://dev.bukkit.org/projects/dynmap/files/3661624/download,
         https://dev.bukkit.org/projects/dynmap-mobs/files/latest,
         https://dev.bukkit.org/projects/holographic-displays/files/3549616/download,
-        https://ci.loohpjames.com/job/HoloMobHealth/lastSuccessfulBuild/artifact/target/HoloMobHealth-2.2.4.12.jar,
+        https://ci.loohpjames.com/job/HoloMobHealth/lastSuccessfulBuild/artifact/target/HoloMobHealth-2.2.5.2.jar,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
         https://dev.bukkit.org/projects/serverminimap/files/latest,
+        https://dev.bukkit.org/projects/ships/files/latest,
         https://github.com/Pixelated-Studios/SurvivalPlus/releases/download/4.0.4-RELEASE/SurvivalPlus-4.0.4-RELEASE.jar
       "
       ## server.properties
