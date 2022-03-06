@@ -26,6 +26,7 @@ services:
       # Minepacks          - 19286
       # Oh The Dungeions You'll Go - 76437
       # One Play Sleep     - 31585
+      # PlaceholderAPI     - 6245
       # RocketBoots        - 13529
       # SavageDeathChest   - 6633
       # SavageDeathCompass - 81306
@@ -33,25 +34,29 @@ services:
       # TerraformGenerator - 75132
       # TreeAssist         - 67436
       # Vivecraft          - 33166
-      SPIGET_RESOURCES: 1056,2429,6633,13529,19286,31585,33166,39534,59773,67436,75132,76437,81069,81306,81490,81534,82349,94168,95096
+      SPIGET_RESOURCES: 1056,2429,6245,6633,13529,19286,31585,33166,39534,59773,67436,75132,76437,81069,81306,81490,81534,82349,94168,95096
       ## Other plugins
       # Dynmap
       # Dynmap-Mobs
       # Holographic Displays
       # HoloMobHealth
+      # MythicMobs
       # ProtocolLib
       # ServerMiniMap
       # Ships
       # SurvivalPlus
+      # WorldEdit
       MODS: "
         https://dev.bukkit.org/projects/dynmap/files/3661624/download,
         https://dev.bukkit.org/projects/dynmap-mobs/files/latest,
         https://dev.bukkit.org/projects/holographic-displays/files/3549616/download,
         https://ci.loohpjames.com/job/HoloMobHealth/lastSuccessfulBuild/artifact/target/HoloMobHealth-2.2.5.2.jar,
+        https://www.mythiccraft.io/downloads/mythicmobs/free/MythicMobs-4.14.2.jar,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
         https://dev.bukkit.org/projects/serverminimap/files/latest,
         https://dev.bukkit.org/projects/ships/files/latest,
-        https://github.com/Pixelated-Studios/SurvivalPlus/releases/download/4.0.4-RELEASE/SurvivalPlus-4.0.4-RELEASE.jar
+        https://github.com/Pixelated-Studios/SurvivalPlus/releases/download/4.0.4-RELEASE/SurvivalPlus-4.0.4-RELEASE.jar,
+        https://dev.bukkit.org/projects/worldedit/files/latest
       "
       ## server.properties
       ALLOW_FLIGHT: "true"
